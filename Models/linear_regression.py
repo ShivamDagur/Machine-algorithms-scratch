@@ -1,4 +1,4 @@
-import statistics as st
+from Statistical_function import statistics as st
 
 # 1 - SLOPE (m) AND INTERCEPT (c) — Least Squares Method --
 
@@ -70,8 +70,7 @@ import pandas as pd
 
 
 if __name__ == "__main__":
-    df = pd.read_excel("linear_dependent_data.xlsx")
-
+    df = pd.read_excel("Data/linear_dependent_data.xlsx")
     x = df["data1"].tolist()
     y = df["data2"].tolist()
 

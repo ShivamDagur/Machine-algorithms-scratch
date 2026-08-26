@@ -1,5 +1,5 @@
 import math
-import statistics as st
+from Statistical_function import statistics as st
 
 # EXPONENTIAL REGRESSION: y = a * e^(b * x)
 
@@ -65,7 +65,7 @@ def exp_gradient_descent(x, y, learning_rate=0.01, epochs=2000):
 import pandas as pd
 
 if __name__ == "__main__":
-    df = pd.read_excel("exp_dependent_data.xlsx")
+    df = pd.read_excel("Data/exp_dependent_data.xlsx")
     x = df["data1"].tolist()
     y = df["data2"].tolist()
 

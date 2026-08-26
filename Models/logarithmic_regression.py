@@ -1,6 +1,5 @@
 import math
-import statistics as st
-
+from Statistical_function import statistics as st
 # LOGARITHMIC REGRESSION: y = m * ln(x) + c
 
 # 1. log-transform....
@@ -65,7 +64,7 @@ def log_gradient_descent(x, y, learning_rate=0.01, epochs=1000):
 
 import pandas as  pd
 if __name__ == "__main__":
-    df = pd.read_excel("log_dependent_data.xlsx")
+    df = pd.read_excel("Data/log_dependent_data.xlsx")
     x = df["data1"].tolist()
     y = df["data2"].tolist()
     
